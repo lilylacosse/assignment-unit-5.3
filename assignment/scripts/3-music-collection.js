@@ -3,7 +3,7 @@ console.log('***** Music Collection *****')
 let collection = [];
 beatlesDiscography = [];
 
-function addToCollection( title, artist, yearPublished) { 
+function addToCollection(title, artist, yearPublished) { 
    let album = {
         'title': title,
         'artist': artist,
@@ -21,3 +21,13 @@ addToCollection('Blood on the Tracks', 'Bob Dylan', 1975);
 addToCollection('White Blood Cells', 'The White Stripes', 2001);
 
 console.log('Albums in Colleciton:', collection);
+
+function showCollection(array) {
+    console.log('Number of Albums in Collection:', array.length);
+    console.log('List of Albums in Collection:');
+
+    for (let item of collection) {
+        console.log(item.title, 'by', item.artist, 'published in', item.yearPublished);
+    }
+}
+
