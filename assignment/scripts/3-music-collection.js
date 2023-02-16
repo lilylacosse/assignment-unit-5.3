@@ -31,3 +31,4 @@ function showCollection(array) {
     }
 }
 
+showCollection(collection);
