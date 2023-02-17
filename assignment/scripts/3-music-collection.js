@@ -27,8 +27,18 @@ function showCollection(array) {
     console.log('List of Albums in Collection:');
 
     for (let item of collection) {
-        console.log(item.title, 'by', item.artist, 'published in', item.yearPublished);
+        console.log(item.title, 'by', item.artist, ', published in', item.yearPublished);
     }
 }
 
 showCollection(collection);
+
+function findByArtist(artist) {
+    let searchResult = [];
+    for (let item of collection) {
+        if (item.artist === artist) {
+            searchResult.push(item);
+        }
+    }
+    return console.log(artist,'Search Results:', searchResult);
+}
