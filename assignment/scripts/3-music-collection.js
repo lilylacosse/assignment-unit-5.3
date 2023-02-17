@@ -42,3 +42,8 @@ function findByArtist(artist) {
     }
     return console.log(artist,'Search Results:', searchResult);
 }
+
+findByArtist('The White Stripes');
+findByArtist('Bob Dylan');
+findByArtist('Yellowcard');
+findByArtist('The Beatles');
